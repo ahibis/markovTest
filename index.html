@@ -61,7 +61,7 @@
       a.click()
     }
     (async ()=>{
-      const text = await (await fetch("/jokes.txt")).text()
+      const text = await (await fetch("./jokes.txt")).text()
       const tokens = [".",...text
         .replace(/,/g,"")
         .split(/[\s\n]/g)
