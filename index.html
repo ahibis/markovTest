@@ -7,11 +7,11 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-    
-  </script>
-  <div id="anec"></div>
-  <button onclick="newJoke()">новый</button>
+  <div style="width: 800px;margin:0px auto;">
+    <h3 id="anec"></h3>
+    <button onclick="newJoke()" style="backgroud-color:#effedd; "><h2>новый</h2></button>
+  </div>
+  
   <script>
     function newJoke(){
       document.querySelector("#anec").innerText = generate()
