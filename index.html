@@ -61,7 +61,9 @@
       a.click()
     }
     (async ()=>{
-      const text = await (await fetch("./jokes.txt")).text()
+      const file = document.location.hash? "./"+document.location.hash.slice(1):"./jokes.txt"
+      console.log(file)
+      const text = await (await fetch(file)).text()
       const tokens = [".",...text
         .replace(/,/g,"")
         .split(/[\s\n]/g)
