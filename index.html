@@ -14,7 +14,7 @@
   <button onclick="newJoke()">новый</button>
   <script>
     function newJoke(){
-      document.querySelector("#anec").innerHTML = generate()
+      document.querySelector("#anec").innerText = generate()
     }
     const chain = {};
     const iRandom = max=>~~(Math.random()*max)
