@@ -1,0 +1,18 @@
+{
+  "name": "markovTest",
+  "version": "0.1.0",
+  "main": "generate.js",
+  "author": "ahibis<pokesteve31@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-html-parser": "^5.4.2-0"
+  },
+  "scripts": {
+    "generate": "yarn generate",
+    "dev": "serve"
+  },
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
