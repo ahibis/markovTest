@@ -20,7 +20,7 @@ async function f() {
   //console.log(words)
   await fs.writeFile(
     "./swears.txt",
-    words.filter(word=>/ /.test(word)).map(word=>word+".").join("\n")
+    words.filter(word=>/ /.test(word)).map(word=>word).join("\n")+"."
   );
 }
 f();
