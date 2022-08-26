@@ -42,10 +42,8 @@
         let num = iRandom(sum)
         const i = values.reduce((acc,v)=>{
           num-=v;
-          if(num<0) 
-            return acc; 
-          else
-            return acc+1;
+          if(num<0) return acc; 
+          return acc+1;
         },0)
         word = Object.keys(Words)[i]
         words.push(word)
