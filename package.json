@@ -9,7 +9,7 @@
     "node-html-parser": "^5.4.2-0"
   },
   "scripts": {
-    "generate": "yarn generate",
+    "generate": "node generate.js",
     "dev": "serve"
   },
   "devDependencies": {
