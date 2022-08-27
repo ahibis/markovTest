@@ -83,6 +83,13 @@
         else
           chain[lastToken][token]=1
       })
+      const valuesOfNodes = Object.values(chain)
+      const nodesWithMore1Ways = valuesOfNodes.map(Object.keys).filter(e=>e.length>1)
+      console.log(`
+      всего токенов ${tokens.length}
+      всего звеньев ${valuesOfNodes.length} в цепи маркова
+      из них ${nodesWithMore1Ways.length} (${(100*nodesWithMore1Ways.length/valuesOfNodes.length).toFixed()}%) имеют больше 1 продолжения
+      `)
     })()
   </script>
 </body>
