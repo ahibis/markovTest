@@ -5,5 +5,7 @@
 ### тестирование https://ahibis.github.io/markovTest/
 ![1661623897114](image/readme/1661623897114.png)
 ![1661623934689](image/readme/1661623934689.png)
-![1661623952241](image/readme/1661623952241.png)
 ![1661623982288](image/readme/1661623982288.png)
+![1661624132362](image/readme/1661624132362.png)
+![1661624148522](image/readme/1661624148522.png)
+![1661624167617](image/readme/1661624167617.png)
