@@ -10,6 +10,7 @@
   <div style="width: 800px;margin:0px auto;">
     <h3 id="anec"></h3>
     <button onclick="newJoke()" style="backgroud-color:#effedd; "><h2>новый</h2></button>
+    <button onclick="documentDownload()" style="backgroud-color:#effedd; "><h2>скачать</h2></button>
   </div>
   
   <script>
@@ -57,6 +58,10 @@
       a.download = name
       a.href = URL.createObjectURL(new Blob([text],{type:"application/json"}))
       a.click()
+    }
+    function documentDownload(){
+      jsonDownload(JSON.stringify(chain),
+      (document.location.hash?document.location.hash.slice(4):"text")+".json")
     }
     (async ()=>{
       const file = document.location.hash? "./"+document.location.hash.slice(1):"./jokes.txt"
